@@ -1,0 +1,33 @@
+* {
+  --item-count: 8;
+  --scroll-duration: 30s;
+}
+
+.divider {
+  position: relative;
+}
+
+.dark-rectangle,
+.grey-rectangle {
+  height: 40px;
+  display: grid;
+  place-items: center;
+}
+
+.dark-rectangle {
+  box-shadow: 0 0 0 100vmax #141414;
+  clip-path: inset(0 -100vmax);
+  background-color: #141414;
+  color: #e0e0e0;
+}
+
+.grey-rectangle {
+  box-shadow: 0 0 0 100vmax #444;
+  clip-path: inset(0 -100vmax);
+  background-color: #444;
+  color: #444;
+  user-select: none;
+  height: 60px;
+  position: absolute;
+  bottom: -10px;
+}

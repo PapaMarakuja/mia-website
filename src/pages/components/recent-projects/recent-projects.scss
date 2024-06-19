@@ -1,0 +1,35 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  gap: 10px;
+  width: 100%;
+  max-width: 680px;
+}
+
+.item {
+  background-color: #141414;
+  height: auto;
+  width: 100%;
+  border-radius: 2rem;
+  overflow: hidden;
+  max-width: 350px;
+  margin: auto;
+}
+
+.projects-col {
+  display: grid;
+  align-content: space-between;
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .projects-grid {
+    display: flex;
+    gap: 0.5rem;
+
+    .item {
+      max-width: unset;
+    }
+  }
+}

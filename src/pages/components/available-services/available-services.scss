@@ -1,0 +1,33 @@
+.services-section {
+  min-height: 50vh;
+  height: 100%;
+  padding-block: 1rem;
+  gap: 0.5rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 2rem;
+  gap: 1rem;
+  width: 100%;
+  max-width: 680px;
+  place-items: center;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  max-width: 300px;
+  width: 100%;
+  border-bottom: 2px #141414 solid;
+  padding-inline: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
