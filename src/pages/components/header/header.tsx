@@ -1,4 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './header.scss';
+import { faHeadset, faPhone, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
   return (
@@ -27,7 +29,9 @@ function Header() {
               </li>
             </ul>
             <div className='flex-end'>
-              <button className='btn btn-primary'>Enter in contact</button>
+              <button className='btn btn-primary'>
+                Enter in contact <FontAwesomeIcon icon={faPhoneAlt} />
+              </button>
             </div>
           </div>
         </div>

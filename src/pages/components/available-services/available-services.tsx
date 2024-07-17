@@ -1,5 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ArrowUpRight } from '../../../assets/arrow-up-right-icon';
 import './available-services.scss';
+import { faMailForward } from '@fortawesome/free-solid-svg-icons';
 
 function AvailableServices() {
   const services = ['Visual identity', 'Brand positioning', 'Rebranding', 'Ui Design'];
@@ -12,7 +14,9 @@ function AvailableServices() {
         Boost your company's identity and <br />
         achieve better results.
       </p>
-      <button className='btn btn-secondary'>Enter in contact</button>
+      <button className='btn btn-secondary'>
+        Enter in contact <FontAwesomeIcon icon={faMailForward} />
+      </button>
       <div className='services-grid'>
         {services.map((service, index) => (
           <div className='service-item' key={index}>

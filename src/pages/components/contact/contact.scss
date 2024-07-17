@@ -1,4 +1,13 @@
 .contact-title {
-  max-width: 80%;
   text-align: center;
+}
+
+br {
+  display: none;
+}
+
+@media (min-width: 430px) {
+  br {
+    display: block;
+  }
 }

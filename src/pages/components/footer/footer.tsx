@@ -4,27 +4,32 @@ import { faBehance, faInstagram, faTelegram } from '@fortawesome/free-brands-svg
 
 function Footer() {
   return (
-    <footer className='flex text-center gap-8 footer-section'>
-      <div className='social-col'>
-        <ul>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-        </ul>
-        <div className='btn-group'>
-          <button>
-            <FontAwesomeIcon icon={faInstagram} />
-          </button>
-          <button>
-            <FontAwesomeIcon icon={faBehance} />
-          </button>
-          <button>
-            <FontAwesomeIcon icon={faTelegram} />
-          </button>
+    <footer>
+      <section className='top'>
+        <div className='image-side'>
+          <img src='/src/assets/logo-dark.png' alt='logo Mia' />
         </div>
-      </div>
-      <div className='copy-col'>
-        <img src='' alt='' />
+        <div className='text-side'>
+          <ul>
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>
+          </ul>
+          <div className='btn-group'>
+            <button id='instagram'>
+              <FontAwesomeIcon icon={faInstagram} />
+            </button>
+            <button id='behance'>
+              <FontAwesomeIcon icon={faBehance} />
+            </button>
+            <button id='telegram'>
+              <FontAwesomeIcon icon={faTelegram} />
+            </button>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <div className='bottom'>
         <p>@ Copyright 2024 - Mia Sotel - Todos os direitos reservados.</p>
       </div>
     </footer>

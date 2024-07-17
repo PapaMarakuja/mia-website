@@ -1,4 +1,6 @@
+import { faLongArrowRight } from '@fortawesome/free-solid-svg-icons';
 import './main.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Main() {
   return (
@@ -11,7 +13,14 @@ function Main() {
         </p>
         <div className='btn-section gap-1 md:flex-row'>
           <button className='btn btn-secondary w-fit'>Get in touch</button>
-          <button className='btn btn-secondary-ghost w-fit'>Check projects</button>
+          <button className='btn btn-secondary-ghost w-fit'>
+            <span className='btn-text-with-icon'>
+              <span>Check projects</span>
+              <div className='btn-text-icon-border'>
+                <FontAwesomeIcon icon={faLongArrowRight} />
+              </div>
+            </span>
+          </button>
         </div>
       </div>
       <div className='main-image'>

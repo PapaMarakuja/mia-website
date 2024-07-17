@@ -1,5 +1,124 @@
-.footer-section {
-  padding-block: 1rem;
-  gap: 0.5rem;
-  margin-bottom: 58px;
+footer {
+  padding-bottom: 80px;
+  color: #141414;
+}
+
+footer {
+  .top {
+    display: grid;
+    align-content: center;
+    margin-block: 1rem;
+    gap: 0.75rem;
+  }
+
+  .image-side {
+    margin: auto;
+
+    img {
+      width: 150px;
+    }
+  }
+
+  .text-side {
+    margin: auto;
+
+    ul {
+      display: flex;
+      gap: 1.25rem;
+      list-style-type: none;
+      margin-bottom: 0.25rem;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 1.25rem;
+
+      button {
+        background-color: white;
+        width: 35px;
+        height: 35px;
+        border: solid 1px #141414;
+        border-radius: 100%;
+        cursor: pointer;
+        transition: scale 0.18s ease-in-out, background-color 0.18s ease-in-out;
+
+        &:hover {
+          scale: 1.125;
+        }
+
+        &#instagram:hover {
+          background-color: rgba(225, 48, 108, 0.5);
+        }
+
+        &#behance:hover {
+          background-color: rgba(0, 87, 255, 0.5);
+        }
+
+        &#telegram:hover {
+          background-color: rgba(0, 136, 204, 0.5);
+        }
+      }
+    }
+  }
+
+  hr {
+    color: #141414;
+    border-radius: 100%;
+    margin-inline: auto;
+    margin-block: 0.5rem;
+    max-width: 460px;
+  }
+
+  .bottom {
+    text-align: center;
+  }
+}
+
+@media (min-width: 640px) {
+  footer {
+    padding-bottom: 1rem;
+    max-width: 1200px;
+    margin-inline: auto;
+
+    .top {
+      grid-template-columns: repeat(2, 1fr);
+      margin-block: 40px;
+
+      .text-side,
+      .image-side {
+        margin: unset;
+      }
+
+      .image-side {
+        img {
+          width: 250px;
+        }
+      }
+
+      .text-side {
+        font-size: 1.2rem;
+
+        ul,
+        .btn-group {
+          justify-content: flex-end;
+        }
+
+        .btn-group {
+          button {
+            height: 45px;
+            width: 45px;
+          }
+        }
+      }
+    }
+
+    hr {
+      display: none;
+    }
+
+    .bottom {
+      text-align: start;
+    }
+  }
 }

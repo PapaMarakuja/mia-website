@@ -1,9 +1,37 @@
 .btn {
   padding: 0.5rem 1.3rem;
   border-radius: 100px;
-  transition: background-color 0.18s ease-in-out;
+  transition: background-color 0.18s ease-in-out, scale 0.18s ease-in-out;
   cursor: pointer;
   text-transform: capitalize;
+
+  .btn-text-with-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .btn-text-icon-border {
+    display: grid;
+    background-color: #e0e0e0;
+    padding: 4px;
+    border-radius: 100%;
+    transition: filter 0.18s ease-in-out;
+  }
+
+  &.btn:hover {
+    scale: 1.025;
+
+    .btn-text-icon-border {
+      filter: brightness(1.1);
+    }
+  }
+
+  &.btn-responsive {
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+  }
 
   &.btn-big {
     padding: 1rem 4rem;
@@ -22,7 +50,7 @@
 
   &.btn-secondary {
     background-color: #141414;
-    border: 1px solid #141414;
+    border: 2px solid #141414;
     color: white;
   }
 
@@ -32,7 +60,7 @@
 
   &.btn-secondary-ghost {
     background-color: #0000;
-    border: 1px solid #141414;
+    border: 2px solid #e0e0e0;
     color: #141414;
   }
 
@@ -54,4 +82,11 @@
 
 .text-center {
   text-align: center;
+}
+
+@media (min-width: 430px) {
+  .btn-responsive {
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+  }
 }

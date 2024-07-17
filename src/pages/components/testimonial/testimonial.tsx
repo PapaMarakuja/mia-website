@@ -1,4 +1,13 @@
 import './testimonial.scss';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+// import required modules
+import { Autoplay, Pagination } from 'swiper/modules';
 
 function Testimonial() {
   const clients = [
@@ -38,7 +47,45 @@ function Testimonial() {
         Check out what my
         <br /> clients are saying
       </h1>
-      <div className='carousel'>
+      <div className='swipper-wrapper'>
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={10}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
+          loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: false,
+          }}
+          modules={[Autoplay, Pagination]}
+          className='mySwiper'
+        >
+          {clients.map((client, index) => (
+            <SwiperSlide key={index}>
+              <div className='card'>
+                <div className='card-image'>
+                  <img src={client.image} alt={client.name} />
+                </div>
+                <h1 className='card-title'>{client.name}</h1>
+                <p className='card-text'>{client.message}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      {/* <div className='carousel'>
         {clients.map((client, index) => (
           <div key={index} className='card'>
             <div className='card-image'>
@@ -48,7 +95,7 @@ function Testimonial() {
             <p className='card-text'>{client.message}</p>
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }
