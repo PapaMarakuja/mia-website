@@ -8,7 +8,7 @@
 }
 
 .dark-rectangle,
-.grey-rectangle {
+.gray-rectangle {
   height: 40px;
   display: grid;
   place-items: center;
@@ -21,7 +21,7 @@
   color: #e0e0e0;
 }
 
-.grey-rectangle {
+.gray-rectangle {
   box-shadow: 0 0 0 100vmax #444;
   clip-path: inset(0 -100vmax);
   background-color: #444;

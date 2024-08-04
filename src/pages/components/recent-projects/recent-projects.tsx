@@ -2,7 +2,7 @@ import './recent-projects.scss';
 
 function RecentProjects() {
   return (
-    <section className='flex text-center gap-8 services-section'>
+    <section id='projects' className='flex text-center gap-8 services-section'>
       <h1 className='main-title'>
         Recent
         <br /> Projects

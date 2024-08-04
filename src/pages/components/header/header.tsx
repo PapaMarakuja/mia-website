@@ -1,6 +1,5 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { scrollIntoElement } from '../../../hooks/scrollIntoElement';
 import './header.scss';
-import { faHeadset, faPhone, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
   return (
@@ -9,30 +8,39 @@ function Header() {
         <div className='desktop-navbar flex'>
           <div className='container navbar-container'>
             <div className='flex-start'>
-              <img src='/src/assets/navbar-logo.png' alt='logo Mia' />
+              <a href='#home' onClick={() => scrollIntoElement('home')}>
+                <img src='/src/assets/logo.png' alt='Mia' />
+              </a>
             </div>
-            <ul className='desktop-navbar-wrapper'>
+            <ul className='desktop-navbar-wrapper flex-end'>
               <li>
-                <a className='navbar-link' href=''>
+                <a
+                  className='navbar-link'
+                  href='#services'
+                  onClick={() => scrollIntoElement('services')}
+                >
                   Services
                 </a>
               </li>
               <li>
-                <a className='navbar-link' href=''>
+                <a
+                  className='navbar-link'
+                  href='#projects'
+                  onClick={() => scrollIntoElement('projects')}
+                >
                   Projects
                 </a>
               </li>
               <li>
-                <a className='navbar-link' href=''>
+                <a
+                  className='navbar-link'
+                  href='#contact'
+                  onClick={() => scrollIntoElement('contact')}
+                >
                   Contact
                 </a>
               </li>
             </ul>
-            <div className='flex-end'>
-              <button className='btn btn-primary'>
-                Enter in contact <FontAwesomeIcon icon={faPhoneAlt} />
-              </button>
-            </div>
           </div>
         </div>
         <ul className='mobile-navbar-wrapper'>

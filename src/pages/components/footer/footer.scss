@@ -15,7 +15,8 @@ footer {
     margin: auto;
 
     img {
-      width: 150px;
+      filter: invert(100%);
+      width: 80px;
     }
   }
 
@@ -88,12 +89,6 @@ footer {
       .text-side,
       .image-side {
         margin: unset;
-      }
-
-      .image-side {
-        img {
-          width: 250px;
-        }
       }
 
       .text-side {

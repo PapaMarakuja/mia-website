@@ -12,6 +12,14 @@
     gap: 8px;
   }
 
+  .text-icon-border-secondary {
+    color: #e0e0e0;
+
+    .btn-text-icon-border {
+      color: #141414;
+    }
+  }
+
   .btn-text-icon-border {
     display: grid;
     background-color: #e0e0e0;
@@ -77,6 +85,10 @@
   &.btn-primary-ghost:hover {
     color: #141414;
     background-color: #e0e0e0;
+  }
+
+  &.btn-inherit-hover:hover {
+    background-color: inherit;
   }
 }
 

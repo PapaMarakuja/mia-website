@@ -15,7 +15,6 @@ function CarouselDivider() {
 
   return (
     <div className='divider'>
-      <div className='grey-rectangle'></div>
       <div className='dark-rectangle'>
         <InfiniteMarqueeComponent items={wrapperItems} />
       </div>
