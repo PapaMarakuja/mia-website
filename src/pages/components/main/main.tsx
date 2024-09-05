@@ -4,6 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { scrollIntoElement } from '../../../hooks/scrollIntoElement';
 
 function Main() {
+  const handleButtonClick = () => {
+    window.open(
+      `https://wa.me/5547996986738?text=${encodeURIComponent(
+        'Olá, Mia. Tenho interesse em seu trabalho, pode me ajudar?'
+      )}`,
+      '_blank'
+    );
+  };
+
   return (
     <section id='home' className='main-section'>
       <div className='main-text'>
@@ -13,7 +22,9 @@ function Main() {
           authentic and impactful brands.
         </p>
         <div className='btn-section gap-1 md:flex-row'>
-          <button className='btn btn-secondary w-fit'>Get in touch</button>
+          <button className='btn btn-secondary w-fit' onClick={handleButtonClick}>
+            Get in touch
+          </button>
           <button
             className='btn btn-secondary-ghost w-fit'
             onClick={() => scrollIntoElement('projects')}

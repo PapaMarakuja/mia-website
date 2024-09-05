@@ -1,13 +1,10 @@
 export const scrollIntoElement = (id: string) => {
-  const element = document.getElementById(id);
-  if (element) {
-    const headerOffset = 75;
-    const elementPosition = element.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth',
-    });
-  }
+  const topNavbarHeight = 75;
+  setTimeout(() => {
+    const y = document.getElementById(id);
+    if (y) {
+      const t = y.getBoundingClientRect().top + window.scrollY - topNavbarHeight;
+      window.scroll({ top: t, behavior: 'smooth' });
+    }
+  }, 10);
 };

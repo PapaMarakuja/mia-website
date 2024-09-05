@@ -45,22 +45,38 @@ function Header() {
         </div>
         <ul className='mobile-navbar-wrapper'>
           <li>
-            <a className='navbar-link' href=''>
-              About
+            <a
+              className='navbar-link'
+              href='#home'
+              onClick={() => scrollIntoElement('home')}
+            >
+              Home
             </a>
           </li>
           <li>
-            <a className='navbar-link' href=''>
+            <a
+              className='navbar-link'
+              href='#services'
+              onClick={() => scrollIntoElement('services')}
+            >
               Services
             </a>
           </li>
           <li>
-            <a className='navbar-link' href=''>
+            <a
+              className='navbar-link'
+              href='#projects'
+              onClick={() => scrollIntoElement('projects')}
+            >
               Projects
             </a>
           </li>
           <li>
-            <a className='navbar-link' href=''>
+            <a
+              className='navbar-link'
+              href='#contact'
+              onClick={() => scrollIntoElement('contact')}
+            >
               Contact
             </a>
           </li>

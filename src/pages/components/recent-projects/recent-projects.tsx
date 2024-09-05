@@ -11,6 +11,7 @@ function RecentProjects() {
       <div className='projects-grid'>
         <div className='projects-col'>
           <div className='item'>
+            <div className='item-desc'></div>
             <img src='/src/assets/grid-image-1.png' alt='' />
           </div>
           <div className='item'>

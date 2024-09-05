@@ -20,9 +20,7 @@ function Footer() {
         </div>
         <div className='text-side'>
           <ul>
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
+            <li>Social Media</li>
           </ul>
           <div className='btn-group'>
             <button id='instagram' onClick={() => handleButtonClick(1)}>

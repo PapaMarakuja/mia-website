@@ -43,6 +43,7 @@ footer {
         border-radius: 100%;
         cursor: pointer;
         transition: scale 0.18s ease-in-out, background-color 0.18s ease-in-out;
+        color: #141414 !important;
 
         &:hover {
           scale: 1.125;
