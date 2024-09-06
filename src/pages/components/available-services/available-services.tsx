@@ -14,17 +14,19 @@ function AvailableServices() {
 
   return (
     <section id='services' className='flex text-center services-section'>
-      <h1 className='main-title'>
-        What can I <br /> do for you?
-      </h1>
-      <p className='main-sub-title'>
-        Boost your company's identity and <br />
-        achieve better results.
-      </p>
-      <button className='btn btn-secondary' onClick={handleButtonClick}>
-        Enter in contact
-      </button>
-      <div className='services-grid'>
+      <div data-aos='zoom-in'>
+        <h1 className='main-title'>
+          What can I <br /> do for you?
+        </h1>
+        <p className='main-sub-title'>
+          Boost your company's identity and <br />
+          achieve better results.
+        </p>
+        <button className='btn btn-secondary' onClick={handleButtonClick}>
+          Enter in contact
+        </button>
+      </div>
+      <div data-aos='zoom-in' className='services-grid'>
         {services.map((service, index) => (
           <div className='service-item' key={index}>
             {service}

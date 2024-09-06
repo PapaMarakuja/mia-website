@@ -15,7 +15,7 @@ function Main() {
 
   return (
     <section id='home' className='main-section'>
-      <div className='main-text'>
+      <div data-aos='fade-up' className='main-text'>
         <h1 className='main-title'>Hello, I am Mia, a brand designer</h1>
         <p className='main-sub-title'>
           With a disruptive vision and authenticity that break barriers, I create
@@ -38,7 +38,7 @@ function Main() {
           </button>
         </div>
       </div>
-      <div className='main-image'>
+      <div data-aos='fade-left' className='main-image'>
         <img src='/src/assets/main-image.png' />
       </div>
     </section>

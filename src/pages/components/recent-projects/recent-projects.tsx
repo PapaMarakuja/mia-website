@@ -3,13 +3,13 @@ import './recent-projects.scss';
 function RecentProjects() {
   return (
     <section id='projects' className='flex text-center gap-8 services-section'>
-      <h1 className='main-title'>
+      <h1 data-aos='zoom-in' className='main-title'>
         Recent
         <br /> Projects
       </h1>
 
       <div className='projects-grid'>
-        <div className='projects-col'>
+        <div data-aos='fade-right' className='projects-col'>
           <div className='item'>
             <div className='item-desc'></div>
             <img src='/src/assets/grid-image-1.png' alt='' />
@@ -18,7 +18,7 @@ function RecentProjects() {
             <img src='/src/assets/grid-image-3.png' alt='' />
           </div>
         </div>
-        <div className='projects-col'>
+        <div data-aos='fade-left' className='projects-col'>
           <div className='item'>
             <img src='/src/assets/grid-image-2.png' alt='' />
           </div>

@@ -39,11 +39,11 @@ function Testimonial() {
 
   return (
     <section className='flex text-center gap-8 services-section'>
-      <h1 className='main-title'>
+      <h1 data-aos='zoom-in' className='main-title'>
         Check out what my
         <br /> clients are saying
       </h1>
-      <div className='swipper-wrapper'>
+      <div data-aos='zoom-in' className='swipper-wrapper'>
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
