@@ -1,0 +1,78 @@
+.service-tab {
+  padding: 1rem;
+  text-align: left;
+}
+
+.service-tab-image {
+  max-width: 450px;
+  width: 100%;
+  margin-inline: auto;
+  height: auto;
+}
+
+.service-tab-title {
+  font-family: 'Hutin Regular', sans-serif;
+  font-size: 24px;
+  margin-top: 1rem;
+}
+
+.service-tab-text {
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.btn-contact {
+  display: block;
+  margin-inline: auto;
+  margin-top: 1rem;
+}
+
+.contact {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  color: #141414;
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+
+  span {
+    border-bottom: 2px solid #141414;
+    padding-inline: 0.25rem;
+  }
+
+  .contact-icon {
+    display: grid;
+    background-color: #000dff;
+    color: #e0e0e0;
+    padding: 8px;
+    border-radius: 100%;
+    transition: all 125ms ease-in-out;
+
+    svg {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &:hover {
+    .see-more-icon {
+      background-color: #000acc;
+      scale: 1.025;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .service-tab {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .service-tab-image {
+    width: 70%;
+  }
+
+  .text-side {
+    width: 50%;
+  }
+}

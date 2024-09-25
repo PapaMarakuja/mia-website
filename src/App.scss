@@ -23,7 +23,7 @@
   .btn-text-icon-border {
     display: grid;
     background-color: #e0e0e0;
-    padding: 4px;
+    padding: 8px;
     border-radius: 100%;
     transition: filter 0.18s ease-in-out;
   }
@@ -57,13 +57,14 @@
   }
 
   &.btn-secondary {
-    background-color: #141414;
-    border: 2px solid #141414;
+    background-color: #000dff;
+    border: 2px solid #000dff;
     color: white;
   }
 
   &.btn-secondary:hover {
-    background-color: #303030;
+    background-color: #000acc;
+    border-color: #000acc;
   }
 
   &.btn-secondary-ghost {

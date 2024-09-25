@@ -6,7 +6,7 @@
 .navbar {
   position: fixed;
   bottom: 2%;
-  width: 100%;
+  width: fit-content;
   padding-inline: 0.5rem;
   max-width: 450px;
   z-index: 10;
@@ -107,6 +107,7 @@
 .navbar-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 @media (min-width: 640px) {
@@ -115,9 +116,11 @@
     max-width: unset;
     padding: unset;
     height: 75px;
+    width: 100%;
   }
 
   .desktop-navbar {
+    flex: 1;
     display: flex !important;
   }
 
@@ -127,5 +130,49 @@
 
   .navbar-link {
     color: inherit;
+  }
+
+  .navbar-logo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+
+    a {
+      font-family: 'Hutin Regular';
+      font-size: 2rem;
+      text-decoration: none;
+      color: #e0e0e0;
+      transition: scale 125ms ease-in-out;
+
+      &:hover {
+        scale: 1.2;
+      }
+    }
+  }
+
+  .navbar-btn-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+
+  .navbar-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000;
+    color: #e0e0e0;
+    border: 2px solid #e0e0e0;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: scale 125ms ease-in-out;
+
+    &:hover {
+      scale: 1.1;
+    }
   }
 }

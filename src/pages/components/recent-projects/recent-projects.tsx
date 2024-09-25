@@ -1,32 +1,69 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './recent-projects.scss';
+import { faLongArrowRight } from '@fortawesome/free-solid-svg-icons';
+import '../../../App.scss';
+
+function getScreenWidth() {
+  const width = window.screen.width;
+  return width;
+}
 
 function RecentProjects() {
-  return (
-    <section id='projects' className='flex text-center gap-8 services-section'>
-      <h1 data-aos='zoom-in' className='main-title'>
-        Recent
-        <br /> Projects
-      </h1>
+  const isMobile = () => getScreenWidth() < 890;
+  const images = [
+    {
+      src: '/src/assets/grid-image-1.png',
+      title: 'Bake by Mia',
+      description: '',
+      fade: isMobile() ? 'flip-right' : 'fade-right',
+      link: 'https://www.behance.net/gallery/201312849/Bake-By-Mia',
+    },
+    {
+      src: '/src/assets/grid-image-4.png',
+      title: 'Hole Mole',
+      description: '',
+      fade: isMobile() ? 'flip-left' : 'fade-left',
+      link: 'https://www.behance.net/gallery/201315385/Holy-Mole',
+    },
+    {
+      src: '/src/assets/grid-image-2.png',
+      title: 'Pegue e Monte',
+      description: '',
+      fade: isMobile() ? 'flip-right' : 'fade-right',
+      link: 'https://www.behance.net/gallery/188434545/AP-Pegue-e-Monte',
+    },
+    {
+      src: '/src/assets/grid-image-3.png',
+      title: `Bueno's. Cores e Revestimentos`,
+      description: '',
+      fade: isMobile() ? 'flip-left' : 'fade-left',
+      link: 'https://www.behance.net/gallery/187682561/Buenos-Cores-e-Revestimentos',
+    },
+  ];
 
-      <div className='projects-grid'>
-        <div data-aos='fade-right' className='projects-col'>
-          <div className='item'>
-            <div className='item-desc'></div>
-            <img src='/src/assets/grid-image-1.png' alt='' />
+  const redirectTo = (url: string) => {
+    window.open(url || '', '_blank');
+  };
+
+  return (
+    <section id='projects' className='flex text-center gap-0 services-section'>
+      <div className='gallery'>
+        {images.map((image, index) => (
+          <div key={index} className='image-container' data-aos={image.fade}>
+            <img src={image.src} alt={image.title} />
+            <div className='overlay' onClick={() => redirectTo(image.link)}>
+              <h3>{image.title}</h3>
+            </div>
           </div>
-          <div className='item'>
-            <img src='/src/assets/grid-image-3.png' alt='' />
-          </div>
-        </div>
-        <div data-aos='fade-left' className='projects-col'>
-          <div className='item'>
-            <img src='/src/assets/grid-image-2.png' alt='' />
-          </div>
-          <div className='item'>
-            <img src='/src/assets/grid-image-4.png' alt='' />
-          </div>
-        </div>
+        ))}
       </div>
+
+      <a href='' className='see-more'>
+        <span>Ver mais projetos</span>
+        <div className='see-more-icon'>
+          <FontAwesomeIcon icon={faLongArrowRight} />
+        </div>
+      </a>
     </section>
   );
 }

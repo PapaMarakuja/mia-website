@@ -12,19 +12,17 @@
   text-align: center;
 }
 
-.main-title,
-.main-sub-title {
-  font-family: 'Space Grotesk', sans-serif;
-}
-
 .main-title {
+  font-family: 'Hutin Regular', sans-serif;
   font-size: 44px;
   line-height: 48px;
   letter-spacing: -0.024em;
   font-weight: 600;
+  color: #000dff;
 }
 
 .main-sub-title {
+  font-family: 'Poppins', sans-serif;
   color: #8d8d8d;
   padding-block: 1rem;
   font-size: 1.2rem;
