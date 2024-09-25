@@ -12,25 +12,25 @@ function RecentProjects() {
   const isMobile = () => getScreenWidth() < 890;
   const images = [
     {
+      src: '/assets/grid-image-4.png',
+      title: 'Cenourinha',
+      description: '',
+      fade: isMobile() ? 'flip-right' : 'fade-right',
+      link: 'https://www.behance.net/miiasotel',
+    },
+    {
       src: '/assets/grid-image-1.png',
       title: 'Bake by Mia',
       description: '',
-      fade: isMobile() ? 'flip-right' : 'fade-right',
+      fade: isMobile() ? 'flip-left' : 'fade-left',
       link: 'https://www.behance.net/gallery/201312849/Bake-By-Mia',
     },
     {
-      src: '/assets/grid-image-4.png',
-      title: 'Hole Mole',
-      description: '',
-      fade: isMobile() ? 'flip-left' : 'fade-left',
-      link: 'https://www.behance.net/gallery/201315385/Holy-Mole',
-    },
-    {
       src: '/assets/grid-image-2.png',
-      title: 'Pegue e Monte',
+      title: 'Roast & Sip',
       description: '',
       fade: isMobile() ? 'flip-right' : 'fade-right',
-      link: 'https://www.behance.net/gallery/188434545/AP-Pegue-e-Monte',
+      link: 'https://www.behance.net/gallery/208621705/Roast-Sip',
     },
     {
       src: '/assets/grid-image-3.png',

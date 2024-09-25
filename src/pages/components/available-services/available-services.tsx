@@ -30,19 +30,19 @@ function AvailableServices() {
     if (selectedTab === 0) {
       obj = {
         title: 'Branding',
-        text: `As a designer, I create visual identities that capture the essence of your brand. From color selection and typography to designing impactful logos, my goal is to build an identity that resonates with your audience and reflects your values. Let’s transform your brand's first impression into an unforgettable experience.`,
+        text: `Eu te ajudo a fazer sua marca brilhar de verdade! Com uma estratégia de branding criativa e feita sob medida, a ideia é transformar seu negócio em algo memorável e relevante. Vamos juntos dar vida à sua visão, criando uma marca que atraia seu público e traga valor para seu negócio de forma genuína.`,
         image: '/assets/branding.png',
       };
     } else if (selectedTab === 1) {
       obj = {
-        title: 'Visual Identity',
-        text: `Brand positioning is essential to make your company stand out in a competitive market. I work to define your brand's voice, values, and promise, ensuring it is perceived uniquely and relevantly. Together, we can build an authentic narrative that connects your brand with your target audience.`,
+        title: 'Identidade Visual',
+        text: `Aqui a missão é traduzir a essência da sua marca em uma identidade visual única. Desde o logo até as cores e tipografias, meu foco é criar algo que realmente converse com o público. A identidade visual é como uma primeira impressão, e eu vou garantir que a sua seja marcante e inesquecível.`,
         image: '/assets/visual-id.png',
       };
     } else if (selectedTab === 2) {
       obj = {
         title: 'Web Design',
-        text: `If your brand needs a fresh start, rebranding can be the solution. With a strategic and creative approach, I help reinvent your brand by modernizing its visual identity and repositioning it in the market. Let’s revitalize your brand’s perception and reach new audiences!`,
+        text: `Crio sites modernos, responsivos e pensados para oferecer a melhor experiência para quem navega. O objetivo? Que seu site seja bonito, funcional e fácil de ser encontrado! Vamos desenvolver juntos um site que não só tenha a cara do seu negócio, mas que também entregue uma navegação super fluida em qualquer dispositivo.`,
         image: '/assets/web-design.png',
       };
     }
@@ -54,12 +54,9 @@ function AvailableServices() {
     <section id='services' className='flex text-center services-section'>
       <div data-aos='zoom-in'>
         <h1 className='main-title'>
-          What can I <br /> do for you?
+          Serviços <br />
+          Disponíveis
         </h1>
-        <p className='main-sub-title'>
-          Boost your company's identity and <br />
-          achieve better results.
-        </p>
       </div>
       <div data-aos='zoom-in' className='tabs-wrapper'>
         <ul className='tabs-group'>
@@ -69,7 +66,7 @@ function AvailableServices() {
             isActive={selectedTab === 0}
           />
           <Tab
-            label='Visual Id'
+            label='Identidade Visual'
             onClick={() => handleTabChange(1)}
             isActive={selectedTab === 1}
           />

@@ -36,7 +36,7 @@ function Header() {
                   href='#services'
                   onClick={() => scrollIntoElement('services')}
                 >
-                  Services
+                  Serviços
                 </a>
               </li>
               <li>
@@ -45,7 +45,7 @@ function Header() {
                   href='#projects'
                   onClick={() => scrollIntoElement('projects')}
                 >
-                  Projects
+                  Projetos
                 </a>
               </li>
               <li>
@@ -54,7 +54,7 @@ function Header() {
                   href='#contact'
                   onClick={() => scrollIntoElement('contact')}
                 >
-                  Contact
+                  Contato
                 </a>
               </li>
             </ul>
@@ -90,7 +90,7 @@ function Header() {
               href='#services'
               onClick={() => scrollIntoElement('services')}
             >
-              Services
+              Serviços
             </a>
           </li>
           <li>
@@ -99,7 +99,7 @@ function Header() {
               href='#projects'
               onClick={() => scrollIntoElement('projects')}
             >
-              Projects
+              Projetos
             </a>
           </li>
           <li>
@@ -108,7 +108,7 @@ function Header() {
               href='#contact'
               onClick={() => scrollIntoElement('contact')}
             >
-              Contact
+              Contato
             </a>
           </li>
         </ul>

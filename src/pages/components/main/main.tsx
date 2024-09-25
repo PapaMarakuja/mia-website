@@ -16,21 +16,21 @@ function Main() {
   return (
     <section id='home' className='main-section'>
       <div data-aos='fade-up' className='main-text'>
-        <h1 className='main-title'>Hello, I am Mia, a brand designer</h1>
+        <h1 className='main-title'>Olá, eu sou a Mia</h1>
         <p className='main-sub-title'>
-          With a disruptive vision and authenticity that break barriers, I create
-          authentic and impactful brands.
+          Com uma visão disruptiva e autenticidade que rompem barreiras, crio marcas
+          autênticas e impactantes.
         </p>
         <div className='btn-section gap-1 md:flex-row'>
           <button className='btn btn-secondary w-fit' onClick={handleButtonClick}>
-            Get in touch
+            Entrar em contato
           </button>
           <button
             className='btn btn-secondary-ghost w-fit'
             onClick={() => scrollIntoElement('projects')}
           >
             <span className='btn-text-with-icon'>
-              <span>Check projects</span>
+              <span>Ver todos os trabalhos</span>
               <div className='btn-text-icon-border'>
                 <FontAwesomeIcon icon={faLongArrowRight} />
               </div>

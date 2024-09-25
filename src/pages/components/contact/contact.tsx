@@ -35,15 +35,15 @@ function Contact() {
     <section id='contact' className='contact-section' data-aos='zoom-in'>
       <div className='left-container'>
         <h1 className='main-title contact-title'>
-          Do you have
-          <br /> amazing projects
-          <br /> in mind? Let's talk
+          Voce tem ideias
+          <br /> incríveis em mente?
+          <br /> Vamos conversar!
         </h1>
       </div>
       <div className='right-container'>
         <form onSubmit={handleSubmit}>
           <label htmlFor='form_name'>
-            Name <b>*</b>
+            Nome <b>*</b>
           </label>
           <input
             id='form_name'
@@ -52,7 +52,7 @@ function Contact() {
             onChange={handleChange}
             autoComplete='off'
           />
-          <label htmlFor='form_phone'>Phone</label>
+          <label htmlFor='form_phone'>Telefone</label>
           <input
             id='form_phone'
             type='text'
@@ -61,7 +61,7 @@ function Contact() {
             autoComplete='off'
           />
           <label htmlFor='form_email'>
-            Email <b>*</b>
+            E-mail <b>*</b>
           </label>
           <input
             id='form_email'
@@ -72,11 +72,11 @@ function Contact() {
             autoComplete='off'
           />
           <button type='submit' className='btn btn-secondary'>
-            Send E-mail
+            Enviar E-mail
           </button>
         </form>
         <p>
-          Fields with <b>*</b> are required
+          Campos com <b>*</b> obrigatórios.
         </p>
       </div>
     </section>

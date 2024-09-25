@@ -27,7 +27,7 @@ const ServiceTab: React.FC<ServiceTabProps> = ({ title, text, image }) => {
         <p className='service-tab-text'>{text}</p>
 
         <span onClick={handleButtonClick} className='contact'>
-          <span>Enter in contact</span>
+          <span>Entrar em contato</span>
           <div className='contact-icon'>
             <FontAwesomeIcon icon={faLongArrowRight} />
           </div>
