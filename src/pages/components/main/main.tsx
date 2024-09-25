@@ -39,7 +39,7 @@ function Main() {
         </div>
       </div>
       <div data-aos='fade-left' className='main-image'>
-        <img src='/assets/main-image.png' />
+        <img loading='lazy' src='/assets/main-image.png' />
       </div>
     </section>
   );

@@ -50,7 +50,7 @@ function RecentProjects() {
       <div className='gallery'>
         {images.map((image, index) => (
           <div key={index} className='image-container' data-aos={image.fade}>
-            <img src={image.src} alt={image.title} />
+            <img loading='lazy' src={image.src} alt={image.title} />
             <div className='overlay' onClick={() => redirectTo(image.link)}>
               <h3>{image.title}</h3>
             </div>

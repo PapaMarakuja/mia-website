@@ -21,7 +21,7 @@ const ServiceTab: React.FC<ServiceTabProps> = ({ title, text, image }) => {
 
   return (
     <div className='service-tab'>
-      <img src={image} alt={title} className='service-tab-image' />
+      <img loading='lazy' src={image} alt={title} className='service-tab-image' />
       <div className='text-side'>
         <h2 className='service-tab-title'>{title}</h2>
         <p className='service-tab-text'>{text}</p>
