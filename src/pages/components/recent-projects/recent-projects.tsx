@@ -12,28 +12,28 @@ function RecentProjects() {
   const isMobile = () => getScreenWidth() < 890;
   const images = [
     {
-      src: '/src/assets/grid-image-1.png',
+      src: '/public/assets/grid-image-1.png',
       title: 'Bake by Mia',
       description: '',
       fade: isMobile() ? 'flip-right' : 'fade-right',
       link: 'https://www.behance.net/gallery/201312849/Bake-By-Mia',
     },
     {
-      src: '/src/assets/grid-image-4.png',
+      src: '/public/assets/grid-image-4.png',
       title: 'Hole Mole',
       description: '',
       fade: isMobile() ? 'flip-left' : 'fade-left',
       link: 'https://www.behance.net/gallery/201315385/Holy-Mole',
     },
     {
-      src: '/src/assets/grid-image-2.png',
+      src: '/public/assets/grid-image-2.png',
       title: 'Pegue e Monte',
       description: '',
       fade: isMobile() ? 'flip-right' : 'fade-right',
       link: 'https://www.behance.net/gallery/188434545/AP-Pegue-e-Monte',
     },
     {
-      src: '/src/assets/grid-image-3.png',
+      src: '/public/assets/grid-image-3.png',
       title: `Bueno's. Cores e Revestimentos`,
       description: '',
       fade: isMobile() ? 'flip-left' : 'fade-left',
