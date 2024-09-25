@@ -31,19 +31,19 @@ function AvailableServices() {
       obj = {
         title: 'Branding',
         text: `As a designer, I create visual identities that capture the essence of your brand. From color selection and typography to designing impactful logos, my goal is to build an identity that resonates with your audience and reflects your values. Let’s transform your brand's first impression into an unforgettable experience.`,
-        image: '/public/assets/branding.png',
+        image: '/assets/branding.png',
       };
     } else if (selectedTab === 1) {
       obj = {
         title: 'Visual Identity',
         text: `Brand positioning is essential to make your company stand out in a competitive market. I work to define your brand's voice, values, and promise, ensuring it is perceived uniquely and relevantly. Together, we can build an authentic narrative that connects your brand with your target audience.`,
-        image: '/public/assets/visual-id.png',
+        image: '/assets/visual-id.png',
       };
     } else if (selectedTab === 2) {
       obj = {
         title: 'Web Design',
         text: `If your brand needs a fresh start, rebranding can be the solution. With a strategic and creative approach, I help reinvent your brand by modernizing its visual identity and repositioning it in the market. Let’s revitalize your brand’s perception and reach new audiences!`,
-        image: '/public/assets/web-design.png',
+        image: '/assets/web-design.png',
       };
     }
 
