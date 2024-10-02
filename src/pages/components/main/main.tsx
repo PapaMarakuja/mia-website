@@ -1,12 +1,10 @@
-import { faLongArrowRight } from '@fortawesome/free-solid-svg-icons';
 import './main.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { scrollIntoElement } from '../../../hooks/scrollIntoElement';
 
 function Main() {
   const handleButtonClick = () => {
     window.open(
-      `https://wa.me/5547996986738?text=${encodeURIComponent(
+      `https://wa.me/5547997501164?text=${encodeURIComponent(
         'Olá, Mia. Tenho interesse em seu trabalho, pode me ajudar?'
       )}`,
       '_blank'
@@ -29,12 +27,7 @@ function Main() {
             className='btn btn-secondary-ghost w-fit'
             onClick={() => scrollIntoElement('projects')}
           >
-            <span className='btn-text-with-icon'>
-              <span>Ver todos os trabalhos</span>
-              <div className='btn-text-icon-border'>
-                <FontAwesomeIcon icon={faLongArrowRight} />
-              </div>
-            </span>
+            Ver todos os trabalhos
           </button>
         </div>
       </div>

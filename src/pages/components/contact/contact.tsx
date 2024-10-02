@@ -35,9 +35,9 @@ function Contact() {
     <section id='contact' className='contact-section' data-aos='zoom-in'>
       <div className='left-container'>
         <h1 className='main-title contact-title'>
-          Voce tem ideias
-          <br /> incríveis em mente?
-          <br /> Vamos conversar!
+          Do you have
+          <br /> amazing projects
+          <br /> in mind? Let's talk
         </h1>
       </div>
       <div className='right-container'>

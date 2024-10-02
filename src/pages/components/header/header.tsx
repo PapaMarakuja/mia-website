@@ -26,7 +26,7 @@ function Header() {
           <div className='container navbar-container'>
             <div className='flex-start navbar-logo'>
               <a href='#home' onClick={() => scrollIntoElement('home')}>
-                Mia
+                <img src="/assets/logo.png" alt="" />
               </a>
             </div>
             <ul className='desktop-navbar-wrapper'>

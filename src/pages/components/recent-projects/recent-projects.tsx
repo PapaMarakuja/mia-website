@@ -13,31 +13,31 @@ function RecentProjects() {
   const images = [
     {
       src: '/assets/grid-image-4.png',
-      title: 'Cenourinha',
+      title: 'Nuttini',
       description: '',
       fade: isMobile() ? 'flip-right' : 'fade-right',
       link: 'https://www.behance.net/miiasotel',
     },
     {
       src: '/assets/grid-image-1.png',
-      title: 'Bake by Mia',
+      title: 'Rôtasu Vigan',
       description: '',
       fade: isMobile() ? 'flip-left' : 'fade-left',
-      link: 'https://www.behance.net/gallery/201312849/Bake-By-Mia',
+      link: 'https://www.behance.net/miiasotel',
     },
     {
       src: '/assets/grid-image-2.png',
-      title: 'Roast & Sip',
+      title: 'Cenourinha',
       description: '',
       fade: isMobile() ? 'flip-right' : 'fade-right',
-      link: 'https://www.behance.net/gallery/208621705/Roast-Sip',
+      link: 'https://www.behance.net/miiasotel',
     },
     {
       src: '/assets/grid-image-3.png',
-      title: `Bueno's. Cores e Revestimentos`,
+      title: `Roast & Sip`,
       description: '',
       fade: isMobile() ? 'flip-left' : 'fade-left',
-      link: 'https://www.behance.net/gallery/187682561/Buenos-Cores-e-Revestimentos',
+      link: 'https://www.behance.net/miiasotel',
     },
   ];
 

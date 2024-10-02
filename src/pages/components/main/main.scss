@@ -1,10 +1,11 @@
 .main-section {
-  height: 100vh;
+  height: 100dvh;
   padding-inline: 1rem;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   gap: 2rem;
+  min-height: 765px;
 }
 
 .main-text {
@@ -16,7 +17,6 @@
   font-family: 'Hutin Regular', sans-serif;
   font-size: 44px;
   line-height: 48px;
-  letter-spacing: -0.024em;
   font-weight: 600;
   color: #000dff;
 }
@@ -36,6 +36,8 @@
 }
 
 .main-image {
+  flex: 1 1 0%;
+  width: 100%;
   img {
     height: 100%;
     max-height: 340px;

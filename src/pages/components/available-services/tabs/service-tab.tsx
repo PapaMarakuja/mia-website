@@ -12,7 +12,7 @@ interface ServiceTabProps {
 const ServiceTab: React.FC<ServiceTabProps> = ({ title, text, image }) => {
   const handleButtonClick = () => {
     window.open(
-      `https://wa.me/5547996986738?text=${encodeURIComponent(
+      `https://wa.me/5547997501164?text=${encodeURIComponent(
         'Olá, Mia. Tenho interesse em seu trabalho, pode me ajudar?'
       )}`,
       '_blank'
