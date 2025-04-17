@@ -33,7 +33,8 @@
     color: #000dff;
     position: relative;
     display: inline-block;
-    
+    font-family: 'Hutin Regular', sans-serif;
+
     &::after {
       content: '';
       position: absolute;

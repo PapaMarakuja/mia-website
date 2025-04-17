@@ -34,7 +34,8 @@
     color: #000dff;
     position: relative;
     display: inline-block;
-    
+    font-family: 'Hutin Regular', sans-serif;
+
     &::after {
       content: '';
       position: absolute;
@@ -78,7 +79,7 @@
 .service-title {
   font-family: 'Hutin Regular', sans-serif;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #141414;
   margin-bottom: 1rem;
   position: relative;
