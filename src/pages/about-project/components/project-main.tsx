@@ -35,16 +35,14 @@ const ProjectMain: React.FC<ProjectMainProps> = ({ id }) => {
             className='w-full h-full mx-auto max-w-[450px] md:max-w-[750px] lg:max-w-[1250px] rounded-2xl'
             src={`${project?.thumbImage}`}
             alt='project'
-            loading='lazy'
           />
         </section>
       </div>
       <div
-        className={`hidden fixed bottom-8 right-8 md:flex items-center space-x-3 text-primary transition-all duration-500 ${
-          isVisible
+        className={`hidden fixed bottom-8 right-8 md:flex items-center space-x-3 text-primary transition-all duration-500 ${isVisible
             ? 'opacity-100 translate-y-0'
             : 'opacity-0 translate-y-4 pointer-events-none'
-        }`}
+          }`}
       >
         <span className='text-lg font-medium text-primary'>
           Desça para ver mais{' '}

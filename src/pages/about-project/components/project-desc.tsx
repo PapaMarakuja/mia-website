@@ -25,7 +25,6 @@ const ProjectDesc: React.FC<ProjectDescProps> = ({ id }) => {
             key={index}
             src={image}
             alt={`Image ${index + 1}`}
-            loading='lazy'
           />
         ))}
       </div>

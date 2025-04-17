@@ -36,7 +36,7 @@ function Main() {
         </div>
       </div>
       <div data-aos='fade-left' className='main-image'>
-        <img loading='lazy' src='/assets/main-image.png' alt="Mia Sotel" />
+        <img src='/assets/main-image.png' alt="Mia Sotel" />
       </div>
 
       <div className="scroll-indicator" onClick={() => scrollIntoElement('services')}>

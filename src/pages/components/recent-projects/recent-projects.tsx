@@ -47,7 +47,7 @@ function RecentProjects() {
             key={index}
             className='image-container'
           >
-            <img loading='lazy' src={image.src} alt={image.title} />
+            <img src={image.src} alt={image.title} />
             <Link to={`/about/${image.id}`} className='overlay'>
               <h3>{image.title}</h3>
               <div className="view-project">

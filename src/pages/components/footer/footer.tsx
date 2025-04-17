@@ -22,7 +22,7 @@ function Footer() {
     <footer>
       <div className="container">
         <div className="footer-logo">
-          <img loading='lazy' src='/assets/miaSotel.png' alt='Mia Sotel Logo' />
+          <img src='/assets/miaSotel.png' alt='Mia Sotel Logo' />
         </div>
 
         <div className="social-links">
