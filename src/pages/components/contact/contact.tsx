@@ -9,8 +9,6 @@ function Contact() {
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log('🐒 - e.target.id:', e.target.id);
-    console.log('🐒 - e.target.value:', e.target.value);
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
 
@@ -33,51 +31,65 @@ function Contact() {
 
   return (
     <section id='contact' className='contact-section' data-aos='zoom-in'>
-      <div className='left-container'>
-        <h1 className='main-title contact-title'>
-          Do you have
-          <br /> amazing projects
-          <br /> in mind? Let's talk
-        </h1>
-      </div>
-      <div className='right-container'>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor='form_name'>
-            Nome <b>*</b>
-          </label>
-          <input
-            id='form_name'
-            type='text'
-            value={formData.form_name}
-            onChange={handleChange}
-            autoComplete='off'
-          />
-          <label htmlFor='form_phone'>Telefone</label>
-          <input
-            id='form_phone'
-            type='text'
-            value={formData.form_phone}
-            onChange={handleChange}
-            autoComplete='off'
-          />
-          <label htmlFor='form_email'>
-            E-mail <b>*</b>
-          </label>
-          <input
-            id='form_email'
-            type='email'
-            value={formData.form_email}
-            onChange={handleChange}
-            inputMode='email'
-            autoComplete='off'
-          />
-          <button type='submit' className='btn btn-secondary'>
-            Enviar E-mail
-          </button>
-        </form>
-        <p>
-          Campos com <b>*</b> obrigatórios.
-        </p>
+      <div className='contact-container'>
+        <div className='left-container'>
+          <h1 className='main-title contact-title'>
+            Do you have
+            <br /> amazing projects
+            <br /> in mind? <span className='highlight'>Let's talk</span>
+          </h1>
+        </div>
+        <div className='right-container'>
+          <form onSubmit={handleSubmit}>
+            <div className='input-group'>
+              <label htmlFor='form_name'>
+                Nome <b>*</b>
+              </label>
+              <input
+                id='form_name'
+                type='text'
+                value={formData.form_name}
+                onChange={handleChange}
+                autoComplete='off'
+                placeholder='Seu nome'
+              />
+            </div>
+            
+            <div className='input-group'>
+              <label htmlFor='form_phone'>Telefone</label>
+              <input
+                id='form_phone'
+                type='text'
+                value={formData.form_phone}
+                onChange={handleChange}
+                autoComplete='off'
+                placeholder='(00) 00000-0000'
+              />
+            </div>
+            
+            <div className='input-group'>
+              <label htmlFor='form_email'>
+                E-mail <b>*</b>
+              </label>
+              <input
+                id='form_email'
+                type='email'
+                value={formData.form_email}
+                onChange={handleChange}
+                inputMode='email'
+                autoComplete='off'
+                placeholder='seu@email.com'
+              />
+            </div>
+            
+            <button type='submit' className='btn btn-secondary'>
+              Enviar E-mail
+            </button>
+          </form>
+          <p className='required-fields'>
+            Campos com <b>*</b> obrigatórios.
+          </p>
+        </div>
       </div>
     </section>
   );

@@ -1,5 +1,7 @@
 import './main.scss';
 import { scrollIntoElement } from '../../../hooks/scrollIntoElement';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLongArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 function Main() {
   const handleButtonClick = () => {
@@ -13,8 +15,10 @@ function Main() {
 
   return (
     <section id='home' className='main-section'>
+      <div className="hero-background"></div>
       <div data-aos='fade-up' className='main-text'>
-        <h1 className='main-title'>Olá, eu sou a Mia</h1>
+        <span className="greeting">Designer & Brand Strategist</span>
+        <h1 className='main-title'>Olá, eu sou a <span className="highlight">Mia</span></h1>
         <p className='main-sub-title'>
           Com uma visão disruptiva e autenticidade que rompem barreiras, crio marcas
           autênticas e impactantes.
@@ -32,7 +36,12 @@ function Main() {
         </div>
       </div>
       <div data-aos='fade-left' className='main-image'>
-        <img loading='lazy' src='/assets/main-image.png' />
+        <img loading='lazy' src='/assets/main-image.png' alt="Mia Sotel" />
+      </div>
+
+      <div className="scroll-indicator" onClick={() => scrollIntoElement('services')}>
+        Desça para ver mais{' '}
+        <FontAwesomeIcon className='text-2xl text-primary' icon={faLongArrowDown} />
       </div>
     </section>
   );

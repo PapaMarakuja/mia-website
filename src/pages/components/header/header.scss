@@ -10,6 +10,7 @@
   padding-inline: 0.5rem;
   max-width: 450px;
   z-index: 10;
+  transition: all 0.3s ease;
 }
 
 .mobile-navbar-wrapper {
@@ -24,13 +25,25 @@
   border-radius: 50px;
   color: #141414;
   list-style: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 
   li {
     border-radius: 50px;
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem 0.75rem;
     cursor: pointer;
     user-select: none;
     transition: all 0.18s ease-in-out;
+    position: relative;
+    
+    &.active {
+      background-color: rgba(203, 203, 203, 0.75);
+      font-weight: 500;
+    }
+    
+    &:hover {
+      background-color: rgba(203, 203, 203, 0.5);
+    }
   }
 
   li:where(:focus, :active) {
@@ -44,6 +57,7 @@
   width: 100%;
   color: white;
   height: 75px;
+  transition: all 0.3s ease;
 
   .desktop-navbar-wrapper {
     --_gap: 2rem;
@@ -57,6 +71,7 @@
       float: left;
       padding-inline: calc(var(--_gap) / 2);
       padding-bottom: 6px;
+      transition: all 0.3s ease;
 
       &::after {
         content: '';
@@ -74,7 +89,8 @@
       }
 
       &:hover,
-      &:focus-within {
+      &:focus-within,
+      &.active {
         --_width: 1;
       }
 
@@ -89,12 +105,22 @@
         --_scale-delay: 300ms;
         --_translate-delay: 500ms;
       }
+      
+      &.active .navbar-link {
+        color: #fff;
+        font-weight: 500;
+      }
     }
   }
 
   img {
     height: 40px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 
@@ -102,12 +128,24 @@
   text-decoration: none;
   color: #141414;
   transition: all 0.18s ease-in-out;
+  display: block;
+  padding: 0.25rem 0;
 }
 
 .navbar-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header.scrolled {
+  .desktop-navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
 }
 
 @media (min-width: 640px) {
@@ -169,10 +207,26 @@
     height: 40px;
     font-size: 1.2rem;
     cursor: pointer;
-    transition: scale 125ms ease-in-out;
+    transition: all 0.3s ease;
 
     &:hover {
       scale: 1.1;
+      color: #fff;
+      border-color: #fff;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+@media (max-width: 639px) {
+  .mobile-navbar-wrapper {
+    .navbar-link {
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+    
+    li.active .navbar-link {
+      font-weight: 600;
     }
   }
 }

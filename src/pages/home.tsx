@@ -9,7 +9,7 @@ import './home.scss';
 
 function Home() {
   return (
-    <>
+    <div className='container'>
       <Header />
       <Main />
       <CarouselDivider />
@@ -17,7 +17,7 @@ function Home() {
       <RecentProjects />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 
