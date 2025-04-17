@@ -14,7 +14,6 @@ function AvailableServices() {
 
   return (
     <section id='services' className='services-section'>
-      <div className="services-background"></div>
       <div data-aos='fade-up' className="services-header">
         <h1 className='services-title'>
           Serviços <span className="highlight">Disponíveis</span>

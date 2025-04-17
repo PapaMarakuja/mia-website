@@ -30,8 +30,8 @@ function Contact() {
   };
 
   return (
-    <section id='contact' className='contact-section' data-aos='zoom-in'>
-      <div className='contact-container'>
+    <section id='contact' className='contact-section'>
+      <div data-aos='zoom-in' className='contact-container'>
         <div className='left-container'>
           <h1 className='main-title contact-title'>
             Do you have
@@ -54,7 +54,7 @@ function Contact() {
                 placeholder='Seu nome'
               />
             </div>
-            
+
             <div className='input-group'>
               <label htmlFor='form_phone'>Telefone</label>
               <input
@@ -66,7 +66,7 @@ function Contact() {
                 placeholder='(00) 00000-0000'
               />
             </div>
-            
+
             <div className='input-group'>
               <label htmlFor='form_email'>
                 E-mail <b>*</b>
@@ -81,7 +81,7 @@ function Contact() {
                 placeholder='seu@email.com'
               />
             </div>
-            
+
             <button type='submit' className='btn btn-secondary'>
               Enviar E-mail
             </button>
